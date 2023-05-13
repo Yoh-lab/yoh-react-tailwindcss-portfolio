@@ -6,14 +6,8 @@
 
 import { useState } from "react";
 import "./App.css";
-import "./components/WorksCard";
-import CardNigetabi from "./components/contents/CardNigetabi";
-import CardPortfolio from "./components/contents/CardPortfolio";
-import CardMakeshihi from "./components/contents/CardMakeshihi";
-import CardYokete from "./components/contents/CardYokete";
-import CardCancelChecker from "./components/contents/CardCancelChecker";
+import CardPortfolio from "./components/contents_works/CardPortfolio";
 import Header from "./components/Header";
-import AboutCard from "./components/contents_about/AboutCard";
 import CardVolleyBall from "./components/contents_about/CardVolleyBall";
 import CardActivity from "./components/contents_about/CardActivity";
 import CardIllustration from "./components/contents_about/CardIllustration";
@@ -40,15 +34,15 @@ function App() {
           </h2>
           <div className="flex justify-center">
             <img
-              className="sm:w-64 w-48 hover:-translate-y-2 hover:-rotate-90 duration-300 ease-in-out"
-              src="./usagi_white.svg"
+              className="sm:w-64 w-48 hover:-translate-y-2 hover:-rotate-30 duration-300 ease-in-out"
+              src="src/components/icon/pawprint.png"
             ></img>
           </div>
         </div>
       </section>
 
       <section
-        className="text-gray-700 border-t border-none"
+        className="text-gray-700 min-h-screen border-t border-none"
         // className="text-gray-700 border-t border-gray-200 bg-white"
         id="about"
       >
@@ -71,7 +65,7 @@ function App() {
               研究室では、「文章生成AIや画像生成AIを用いた英語学習」について研究を行っています
               <br />
               とにかく体験することが大好きです！
-              スポーツやアウトドア、ゲームなど、見るだけでなく自分でやってみたいと体が動いてしまいます！
+              スポーツやアウトドア、ゲームなど、見るだけでは満足できずに勝手に体が動いてしまう性格です！
             </p>
           </div>
           <div class=" py-6 sm:py-8 lg:py-12">
@@ -92,7 +86,7 @@ function App() {
       </section>
 
       <section
-        className="text-gray-700 border-t border-none"
+        className="text-gray-700 min-h-screen border-t border-none"
         // className="text-gray-700 border-t border-gray-200 bg-white"
         id="works"
       >
@@ -121,29 +115,37 @@ function App() {
             <h1 className="text-2xl sm:text-3xl font-medium mb-2 text-blue-400">
               Works
             </h1>
-            <p className="pb-1">これまでに作ったものを載せていきます</p>
+            <p className="pb-1">これまでに作ったものを載せていきます
+            <br />順次追加していきます
+            </p>
           </div>
           {/* カードのdivタグ */}
           <div className="flex flex-wrap justify-center">
-            <CardNigetabi />
             <CardPortfolio />
-            <CardMakeshihi />
           </div>
         </div>
       </section>
 
 
       <section
-        className="text-gray-700 border-t border-none"
+        className="text-gray-700 min-h-screen border-t border-none"
         // className="text-gray-700 border-t border-gray-200 bg-white"
         id="career"
       >
         <div className="container px-5 py-20 mx-auto">
+        <div className="text-center mb-20">
+            <h1 className="text-2xl sm:text-3xl font-medium mb-2 text-blue-400">
+              Career
+            </h1>
+            <p className="pb-1">
+              開発途中です
+            </p>
+          </div>
         </div>
       </section>
 
 
-      <footer className="text-white border-b border-gray-200 bg-blue-400">
+      <section className="text-white border-b border-gray-200 bg-blue-400">
         <div className="container flex mx-auto p-4 flex-col md:flex-row items-center">
           <p className="mb-1">©︎ 2023 Yoh Otsuka</p>
           <div className="flex md:ml-auto">
@@ -184,7 +186,7 @@ function App() {
             </a>
           </div>
         </div>
-      </footer>
+      </section>
     </>
   );
 }

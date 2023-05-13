@@ -10,7 +10,7 @@ const CardVolleyBall = () => {
       date={"2013 ~"}
       thumbnail="src/components/contents_about/images/IMG_3878.jpg"
       description=
-        "大学院の講義の課題として、チームで開発を行いました。メンバーの半数以上がWeb開発の経験がない中、お互いにコミュニケーションをとりながら行いました。アイデアの考案、フロントエンド、進捗管理、プレゼン発表を担当しました。"
+        "中学1年生からバレーボールを続けています。高校2年で兵庫県ベスト8、近畿大会出場を果たしました。高校3年生の時には部長を務めました。大学でもバレーボールサークルで活動しています。"
       
       image_list={[
         "src/components/contents_about/images/IMG_4706.JPG",

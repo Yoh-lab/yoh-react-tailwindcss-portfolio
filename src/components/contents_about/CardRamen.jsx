@@ -10,7 +10,7 @@ const CardRamen = () => {
       date={""}
       thumbnail="src/components/contents_about/images/IMG_1964.jpg"
       description=
-        "行ったことのない場所に行くのが大好きです。体を動かすことも好きなので、"
+        "行く先々で事前にリサーチした美味しいお店に入るようにしています！グルメといいながら、8割はラーメン巡りになっています。"
       
       image_list={[
         "src/components/contents_about/images/IMG_1964.jpg",

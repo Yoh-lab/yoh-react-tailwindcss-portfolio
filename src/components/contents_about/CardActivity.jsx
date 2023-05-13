@@ -10,7 +10,7 @@ const CardActivity = () => {
       date={""}
       thumbnail="src/components/contents_about/images/IMG_1271.JPG"
       description=
-        "行ったことのない場所に行くのが大好きです。体を動かすことも好きなので、"
+        "行ったことのない場所に行くのが大好きです！長期休暇には必ず旅行に行きます！"
       
       image_list={[
         "src/components/contents_about/images/IMG_8568 2.jpg",
