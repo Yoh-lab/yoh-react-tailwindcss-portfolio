@@ -7,7 +7,7 @@ const Header = () => {
     let scroll = window.pageYOffset;
     // console.log(scroll+"  "+window.innerHeight)
     if (scroll >= 3 * window.innerHeight) {
-      setSelectedID("Carrer");
+      setSelectedID("Career");
       // console.log("赤");
     } else if (scroll >= 2 * window.innerHeight) {
       setSelectedID("Works");
@@ -70,7 +70,7 @@ const Header = () => {
               }
               href="#career"
             >
-              Carrer
+              Career
             </a>
           </li>
         </ul>

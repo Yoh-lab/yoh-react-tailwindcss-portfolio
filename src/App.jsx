@@ -48,7 +48,7 @@ function App() {
       </section>
 
       <section
-        className="text-gray-700 border-t h-screen border-none"
+        className="text-gray-700 border-t border-none"
         // className="text-gray-700 border-t border-gray-200 bg-white"
         id="about"
       >
@@ -92,7 +92,7 @@ function App() {
       </section>
 
       <section
-        className="text-gray-700 border-t h-screen border-none"
+        className="text-gray-700 border-t border-none"
         // className="text-gray-700 border-t border-gray-200 bg-white"
         id="works"
       >
@@ -121,7 +121,7 @@ function App() {
             <h1 className="text-2xl sm:text-3xl font-medium mb-2 text-blue-400">
               Works
             </h1>
-            <p className="pb-1">これまでに作ったものを何でも載せています</p>
+            <p className="pb-1">これまでに作ったものを載せていきます</p>
           </div>
           {/* カードのdivタグ */}
           <div className="flex flex-wrap justify-center">
@@ -134,7 +134,7 @@ function App() {
 
 
       <section
-        className="text-gray-700 border-t h-screen border-none"
+        className="text-gray-700 border-t border-none"
         // className="text-gray-700 border-t border-gray-200 bg-white"
         id="career"
       >
