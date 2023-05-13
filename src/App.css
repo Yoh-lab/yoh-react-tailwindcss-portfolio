@@ -8,3 +8,7 @@ html{
     background: #4EF5CF;
     transition: 1s;
   }
+
+  header{
+    transition: 1s;
+  }
