@@ -168,7 +168,7 @@ const Modal = (props) => {
                       <div className="flex justify-center">
                         <img
                           className="rounded-lg"
-                          src={props.imgPaths[selectImg]}
+                          src={props.image_list[selectImg]}
                           alt=""
                         />
                       </div>

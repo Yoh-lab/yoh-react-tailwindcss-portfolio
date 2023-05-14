@@ -12,6 +12,7 @@ import CardVolleyBall from "./components/contents_about/CardVolleyBall";
 import CardActivity from "./components/contents_about/CardActivity";
 import CardIllustration from "./components/contents_about/CardIllustration";
 import CardRamen from "./components/contents_about/CardRamen";
+import main_icon from "./components/icon/pawprint.png";
 
 function App() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -35,7 +36,7 @@ function App() {
           <div className="flex justify-center">
             <img
               className="sm:w-64 w-48 hover:-translate-y-2 hover:-rotate-30 duration-300 ease-in-out"
-              src="src/components/icon/pawprint.png"
+              src={main_icon}
             ></img>
           </div>
         </div>
