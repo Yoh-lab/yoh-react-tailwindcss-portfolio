@@ -13,6 +13,9 @@ import CardActivity from "./components/contents_about/CardActivity";
 import CardIllustration from "./components/contents_about/CardIllustration";
 import CardRamen from "./components/contents_about/CardRamen";
 import main_icon from "./components/icon/pawprint.png";
+import CardMangaVoca from "./components/contents_works/CardMangaVoca";
+import CardNoccaNocca from "./components/contents_works/CardNoccaNocca";
+import CardCorridor from "./components/contents_works/CardCorridor";
 
 function App() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -123,6 +126,9 @@ function App() {
           {/* カードのdivタグ */}
           <div className="flex flex-wrap justify-center">
             <CardPortfolio />
+            <CardMangaVoca />
+            <CardNoccaNocca />
+            <CardCorridor />
           </div>
         </div>
       </section>
