@@ -16,6 +16,7 @@ import main_icon from "./components/icon/pawprint.png";
 import CardMangaVoca from "./components/contents_works/CardMangaVoca";
 import CardNoccaNocca from "./components/contents_works/CardNoccaNocca";
 import CardCorridor from "./components/contents_works/CardCorridor";
+import Showname from "./components/showname";
 
 function App() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -33,6 +34,7 @@ function App() {
           <h1 className="flex justify-center text-3xl sm:text-6xl text-white font-medium pt-24 md:pt-40 mb-2">
             Yoh Otsuka
           </h1>
+          <Showname />
           <h2 className="flex justify-center text-white text-lg sm:text-2xl mb-12 leading-relaxed">
             Thank you for coming!
           </h2>
