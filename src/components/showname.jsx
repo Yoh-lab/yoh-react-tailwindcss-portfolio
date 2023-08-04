@@ -30,6 +30,8 @@ export default function Showname() {
     // setMessage("ボタンがクリックされました！");
   };
 
+  
+
   return (
     <div class="items-center justify-center">
       <h1>temaraeno</h1>
