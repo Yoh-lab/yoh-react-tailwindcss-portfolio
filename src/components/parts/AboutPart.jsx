@@ -18,7 +18,7 @@ const AboutPart = () => {
   return (
     <div className="flex-col items-center w-screen">
       <section className="h-screen ">
-        <div className=" flex items-center justify-between xl:pt-48 sm:pt-36 pt-12 xl:pb-28 xl:w-7/12 sm:w-10/12 w-5/6 mx-auto">
+        <div className=" flex items-center justify-between xl:pt-48 sm:pt-36 pt-36 xl:pb-28 pb-24 xl:w-8/12 lg:w-8/12 md:w-8/12 sm:w-10/12 w-9/12 mx-auto">
           <div className="flex-col">
             <h1 className="text-gray-700 code font-bold ml-2 text-left  xl:text-3xl md:text-2xl text-2xl">
               おおつか よう
@@ -36,7 +36,7 @@ const AboutPart = () => {
           </div>
         </div>
 
-        <div className="flex items-center xl:w-7/12 sm:w-10/12 w-5/6 mx-auto">
+        <div className="flex items-center xl:w-8/12 lg:w-8/12 md:w-8/12 sm:w-10/12 w-9/12 mx-auto">
           <div className="flex-col items-start">
             <h2 className="text-gray-700 code text-left sm:text-2xl text-1xl">
               {lines.map((line, index) => (
@@ -50,9 +50,9 @@ const AboutPart = () => {
         </div>
       </section>
 
-      <section className="h-screen">
-        <div class=" xl:w-10/12 sm:w-10/12 w-5/6 mx-auto">
-            <div class="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8">
+      <section className="md:h-screen">
+        <div className=" xl:max-w-6xl lg:max-w-4xl md:max-w-3xl sm:max-w-lg max-w-sm mx-auto">
+            <div className="grid xl:gap-x-16 xl:gap-y-6 md:gap-y-24 sm:gap-x-8 sm:gap-y-6 gap-y-4 md:grid-cols-2 grid-cols-1">
               <CardVolleyBall />
               <CardActivity />
               <CardIllustration />

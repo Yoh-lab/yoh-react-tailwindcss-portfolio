@@ -11,8 +11,9 @@ const Modal = (props) => {
         <button onClick={() => setShowModal(true)}>
           <WorksCard
             title={props.title}
-            comment={props.subtitle}
-            imgPath={props.thumbnail}
+            // comment={props.subtitle}
+            thumbnail={props.thumbnail}
+            english_title={props.english_title}
           />
         </button>
       </div>

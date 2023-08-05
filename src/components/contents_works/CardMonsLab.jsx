@@ -1,18 +1,19 @@
 import React from "react";
 import Modal from "./Modal";
 import ButtonGithub from "./Icons/ButtonGithub";
-import thumbnail_image from "./images/16-9/WebPage.jpg";
+import thumbnail_image from "./images/16-9/MonsLab.jpg";
+
 import first_image from "./images/portfolio.png"
 import second_image from "./images/portfolio.png"
 import third_image from "./images/portfolio.png"
 
 const path = "./contentfigs/CardPortfolio/";
-const CardPortfolio = () => {
+const CardMonsLab = () => {
   return (
     <Modal
-      title={"Webサイト制作"}
-      english_title={"WEB SITE MAKE"}
-      // subtitle={"'私'のことを知ってもらうためのWebサイト"}
+      title={"Webアプリ - MONS LAB -"}
+      english_title={"Web App - MONS LAB -"}
+      subtitle={"'私'のことを知ってもらうためのWebサイト"}
       date={"Feb.2023"}
       thumbnail={thumbnail_image}
       description={
@@ -29,4 +30,4 @@ const CardPortfolio = () => {
   );
 };
 
-export default CardPortfolio;
+export default CardMonsLab;

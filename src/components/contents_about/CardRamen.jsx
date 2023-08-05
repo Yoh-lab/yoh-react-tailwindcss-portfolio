@@ -8,6 +8,16 @@ import third_image from "./images/IMG_2198.jpg"
 
 const path = "./contentfigs/CardNigetabi/";
 const CardRamen = () => {
+    const text = `
+    行く先々で事前にリサーチした美味しいお店に入るようにしています！
+    ただし8割ぐらいラーメン巡りになっています。
+    昔ほどがっつり食べられなくなってきたのが悲しいです。
+
+  ⚪︎好きな食べ物
+  ラーメン、肉料理、魚料理
+  というかなんでも好きです。
+`;
+const lines = text.trim().split("\n");
   return (
     <About
       title={"食べ歩き"}
@@ -17,7 +27,7 @@ const CardRamen = () => {
       thumbnail={thumbnail_image}
       description=
         "行く先々で事前にリサーチした美味しいお店に入るようにしています！グルメといいながら、8割はラーメン巡りになっています。"
-      
+        lines={lines}
         image_list={[
           first_image,
           second_image,

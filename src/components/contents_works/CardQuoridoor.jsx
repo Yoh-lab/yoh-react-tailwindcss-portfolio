@@ -1,17 +1,19 @@
 import React from "react";
 import Modal from "./Modal";
 import ButtonGithub from "./Icons/ButtonGithub";
-import thumbnail_image from "./images/cori_screen_m.png";
+import thumbnail_image from "./images/16-9/Quoridoor.jpg";
+
 import first_image from "./images/cori_developping_m.png"
 import second_image from "./images/cori_screen_m.png"
 import third_image from "./images/cori_screen_m.png"
 
 const path = "./contentfigs/CardPortfolio/";
-const CardCorridor = () => {
+const Quoridoor = () => {
   return (
     <Modal
-      title={"Corridor"}
-      subtitle={"一つの判断が命取りに！コマと壁を使ったボードゲーム"}
+    title={"ゲーム - QUORIDOR -"}
+    english_title={"GAME - QUORIDOR -"}
+      // subtitle={"一つの判断が命取りに！コマと壁を使ったボードゲーム"}
       date={"Aug.2020"}
       thumbnail={thumbnail_image}
       description={
@@ -28,4 +30,4 @@ const CardCorridor = () => {
   );
 };
 
-export default CardCorridor;
+export default Quoridoor;
