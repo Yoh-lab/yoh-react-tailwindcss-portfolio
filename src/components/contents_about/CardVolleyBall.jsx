@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./About";
-import thumbnail_image from "./images/IMG_3878.jpg";
+import thumbnail_image from "./images/16-9/VolleyBall.jpeg";
+
 import first_image from "./images/IMG_4706.jpeg"
 import second_image from "./images/LINE_ALBUM_230521.jpg"
 import third_image from "./images/IMG_4708.jpg"
@@ -9,7 +10,8 @@ const path = "./contentfigs/CardNigetabi/";
 const CardVolleyBall = () => {
   return (
     <About
-      title={"バレーボール"}
+      title={"バレーボール歴10年"}
+      english_title={"VOLLEYBALL"}
     //   subtitle={""}
       date={"2013 ~"}
       thumbnail={thumbnail_image}

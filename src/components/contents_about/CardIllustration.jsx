@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./About";
-import thumbnail_image from "./images/Kon.jpeg";
+import thumbnail_image from "./images/16-9/Paint.jpeg";
+
 import first_image from "./images/Kon.jpeg"
 import second_image from "./images/IMG_9581.jpeg"
 import third_image from "./images/IMG_8580.jpeg"
@@ -9,7 +10,8 @@ const path = "./contentfigs/CardNigetabi/";
 const CardIllustration = () => {
   return (
     <About
-      title={"お絵描き"}
+      title={"デジタル・アナログイラスト制作"}
+      english_title={"DIGITAL / ANALOG DRAWING"}
     //   subtitle={""}
     date={"2020 ~"}
       thumbnail={thumbnail_image}

@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./About";
-import thumbnail_image from "./images/IMG_1271.jpeg";
+import thumbnail_image from "./images/16-9/Activity.jpeg";
+
 import first_image from "./images/IMG_8568 2.jpg"
 import second_image from "./images/IMG_1714.jpg"
 import third_image from "./images/IMG_3275.jpeg"
@@ -10,6 +11,7 @@ const CardActivity = () => {
   return (
     <About
       title={"アクティビティ"}
+      english_title={"ACTIVITY"}
     //   subtitle={""}
       date={""}
       thumbnail={thumbnail_image}
