@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: Space Invaders, DotGothic16, Arial;
+    src: url(./fonts/space_invaders.ttf), url(./fonts/DotGothic16-Regular.ttf);
+  }
