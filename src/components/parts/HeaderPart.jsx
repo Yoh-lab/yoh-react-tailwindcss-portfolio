@@ -23,7 +23,7 @@ const HeaderPart = (props) => {
   // });
 
   // const styles = { outlineStyle: "solid", padding:"5px"  };//切り替わる際のズレをなくすためにborderは却下
-  const selected_styles = "outline p-2";
+  const selected_styles = "p-2 border-4 border-white";
   const not_selected_styles = "p-2";
   // const header_styles =
   //   "flex justify-center items-center w-screen h-22 fixed z-10";
