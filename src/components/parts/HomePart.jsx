@@ -3,11 +3,11 @@ import React from 'react'
 
 const HomePart = () => {
   return (
-    <div className="container mx-auto animate-scale-up-center">
-      <h1 className="flex justify-center text-3xl sm:text-6xl text-gray-700 font-medium pt-24 md:pt-40 mb-2">
+    <div className="flex flex-col justify-center gap-6 items-center h-screen animate-scale-up-center">
+      <h1 className="text-gray-700 code font-bold md:text-7xl text-6xl">
         YOH OTSUKA
       </h1>
-      <h2 className="flex justify-center text-gray-700 text-lg sm:text-2xl mb-12 leading-relaxed">
+      <h2 className="text-gray-700 code md:text-3xl text-2xl">
       STUDENT ENGINEER'S PORTFOLIO SITE
       </h2>
     </div>

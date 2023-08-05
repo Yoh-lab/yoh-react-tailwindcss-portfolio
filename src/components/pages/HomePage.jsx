@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import HeaderPart from "./HeaderPart";
+import HeaderPart from "../parts/HeaderPart";
 import HomePart from "../parts/HomePart";
 import AboutPart from "../parts/AboutPart";
 import WorksPart from "../parts/WorksPart";
@@ -84,7 +84,7 @@ const HomePage = () => {
         </section>
       </div>
       <div className="icon fixed top-0 left-0 w-screen h-screen flex justify-center items-center pointer-events-none z-10 opacity-10">
-          <img className="sm:w-64 w-48" src={main_icon} alt="Main Icon" />
+          <img className="md:w-96 w-72" src={main_icon} alt="Main Icon" />
         </div>
     </div>
   );

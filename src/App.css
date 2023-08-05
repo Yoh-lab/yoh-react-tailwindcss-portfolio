@@ -2,6 +2,10 @@ html{
     scroll-behavior: smooth; 
     /* スムーススクロール */
   }
+  code {
+    font-family:Work Sans, Noto Sans JP, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
 
   body{
     background: #4EF5CF;
