@@ -2,31 +2,23 @@ import React from "react";
 
 const WorksCard = (props) => {
   return (
-    <>
-      <div className="flex flex-col overflow-hidden rounded-lg border bg-white lg:w-96 md:w-64 sm:w-96 sm:min-w-96">
-        <div
-          href="#"
-          className="group relative block overflow-hidden bg-gray-100"
-        >
+    <div>
+      <div className="flex flex-col  p-1 rounded-lg">
+      {/* <div className="group relative block h-52 overflow-hidden bg-gray-100 md:h-44"> */}
+        <div className="group overflow-hidden rounded-lg">
           <img
-            src={props.imgPath}
+            src={props.thumbnail}
             loading="lazy"
-            alt="Photo by Minh Pham"
-            className="h-48 md:h-64 w-full object-cover object-center transition duration-200 group-hover:scale-110"
+            className=" inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
           />
         </div>
-
-        <div className="flex flex-1 flex-col p-4 sm:p-6">
-          <h2 className="text-blue-400 text-lg font-semibold overflow-hidden h-14">
-            {props.title}
-          </h2>
-
-          <p className="mb-8 text-gray-500">{props.comment}</p>
-        </div>
+        <h1 className="code text-amber-600 font-bold text-xl text-left ml-2 mt-2  hover:text-amber-800 active:text-amber-900">
+          {props.title}
+        </h1>
+        <h1 className="code text-gray-700 font-bold text-left ml-2 mb-2">{props.english_title}</h1>
       </div>
-    </>
+    </div>
   );
 };
 
 export default WorksCard;
-

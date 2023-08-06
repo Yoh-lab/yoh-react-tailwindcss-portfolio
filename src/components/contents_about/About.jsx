@@ -7,27 +7,33 @@ const About = (props) => {
 
   return (
     <>
-        <button onClick={() => setShowModal(true)}>
-          <AboutCard
-            thumbnail={props.thumbnail}
-            title={props.title}
-          />
-        </button>
+      <button onClick={() => setShowModal(true)}>
+        <AboutCard
+          thumbnail={props.thumbnail}
+          title={props.title}
+          english_title={props.english_title}
+        />
+      </button>
       {showModal ? (
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-            <div className="container relative my-6 p-4 max-w-6xl lg:max-w-4xl">
+            <div className="container relative my-6 p-4 xl:max-w-5xl sm:max-w-6xl max-w-6xl">
               {/*content*/}
               <div className="rounded-lg relative flex-col bg-white outline-none focus:outline-none">
                 {/*header*/}
                 <div className="border-b border-solid border-slate-200">
                   <div className="flex items-center justify-between px-6 pt-4">
-                    <h3 className="text-xl md:text-2xl font-semibold text-blue-400">
-                      {props.title}
-                    </h3>
+                    <div className="flex items-center">
+                      <h3 className="md:text-3xl text-xl font-semibold text-amber-600">
+                        {props.title}
+                      </h3>
+                      <div className="text-lg text-left font-semibold text-amber-600 pl-6">
+                        {props.date}
+                      </div>
+                    </div>
                     <div className="flex items-center">
                       <button
-                        className="text-blue-300 background-transparent font-bold uppercase px-2 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-200 hover:text-blue-500 hover:-translate-y-1 md:ml-auto"
+                        className="text-amber-500 background-transparent font-bold uppercase px-2 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-200 hover:text-amber-600 hover:-translate-y-1 md:ml-auto"
                         type="button"
                         onClick={() => setShowModal(false)}
                       >
@@ -54,37 +60,34 @@ const About = (props) => {
                       </button>
                     </div>
                   </div>
-                  <div className="text-lg text-gray-500 pl-6 mb-2">
-                    {props.date}
-                  </div>
                 </div>
                 {/*body*/}
                 <div className="">
                   <div className="container py-2 flex-col md:flex-row items-center flex justify-center">
                     <div className="md:w-1/2 mb-4 px-4 md:mr-6 text-center">
                       <div className="mb-2">
-                        <h3 className="text-lg text-blue-400 font-semibold">
-                          Description
+                        <h3 className="text-2xl text-amber-600 py-6 font-semibold">
+                          詳細
                         </h3>
                         <div className="">
-                          <p className="text-gray-500 leading-relaxed text-left">
+                          {/* <p className="text-gray-500 leading-relaxed text-left">
                             {props.description}
-                          </p>
+                          </p> */}
+                          <h2 className="text-gray-700 code text-left sm:text-xl text-lg">
+                            {props.lines.map((line, index) => (
+                              <React.Fragment key={index}>
+                                {line}
+                                <br />
+                              </React.Fragment>
+                            ))}
+                          </h2>
                         </div>
                       </div>
-                      {/* <div className="mb-2">
-                        <h3 className="text-lg text-blue-400 font-semibold">
-                          Skills
-                        </h3>
-                        <p className="ml-6 text-gray-500 leading-relaxed">
-                          {props.skills}
-                        </p>
-                      </div> */}
                     </div>
                     <div className="md:w-2/5 w-3/4 mb-4">
                       <div className="flex mx-auto mb-2 justify-center px-10">
                         <button
-                          className="p-2 hover:text-blue-400 text-gray-500 duration-150"
+                          className="p-2 hover:text-amber-800 text-gray-500 duration-150"
                           onClick={() => setSelectImg(0)}
                         >
                           <svg
@@ -112,7 +115,7 @@ const About = (props) => {
                           </svg>
                         </button>
                         <button
-                          className="p-2 hover:text-blue-400 text-gray-500 duration-150"
+                          className="p-2 hover:text-amber-800 text-gray-500 duration-150"
                           onClick={() => setSelectImg(1)}
                         >
                           <svg
@@ -140,7 +143,7 @@ const About = (props) => {
                           </svg>
                         </button>
                         <button
-                          className="p-2 hover:text-blue-400 text-gray-500 duration-150"
+                          className="p-2 hover:text-amber-800 text-gray-500 duration-150"
                           onClick={() => setSelectImg(2)}
                         >
                           <svg

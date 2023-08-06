@@ -2,12 +2,16 @@ html{
     scroll-behavior: smooth; 
     /* スムーススクロール */
   }
+  code {
+    font-family:Work Sans, Noto Sans JP, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
 
   body{
-    background: #4EF5CF;
+    background: #85FFE9;
     transition: 1s;
   }
 
   header{
-    transition: 1s;
+    transition: 0s;
   }
