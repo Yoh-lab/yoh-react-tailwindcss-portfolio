@@ -2,10 +2,8 @@ import React from "react";
 import Modal from "./Modal";
 import ButtonGithub from "./Icons/ButtonGithub";
 import thumbnail_image from "./images/16-9/Quoridoor.jpeg";
-
-import first_image from "./images/cori_developping_m.png"
-import second_image from "./images/cori_screen_m.png"
-import third_image from "./images/cori_screen_m.png"
+import first_image from "./images/Quoridor/Quoridor1.jpeg";
+import second_image from "./images/Quoridor/Quoridor2.jpeg";
 
 const path = "./contentfigs/CardPortfolio/";
 const Quoridoor = () => {
@@ -30,7 +28,6 @@ const lines = text.trim().split("\n");
       image_list={[
         first_image,
         second_image,
-        third_image
       ]}
     />
   );

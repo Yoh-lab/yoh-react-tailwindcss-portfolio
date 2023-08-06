@@ -2,9 +2,8 @@ import React from "react";
 import Modal from "./Modal";
 import thumbnail_image from "./images/16-9/MangaVoca.jpeg";
 
-import first_image from "./images/voca_screen_m.png";
-import second_image from "./images/voca_screen_m.png";
-import third_image from "./images/voca_screen_m.png";
+import first_image from "./images/MangaVoca/MangaVoca1.jpeg";
+import second_image from "./images/MangaVoca/MangaVoca2.jpeg";
 import ButtonYoutube from "./Icons/ButtonYoutube";
 
 const path = "./contentfigs/CardPortfolio/";
@@ -28,7 +27,7 @@ const lines = text.trim().split("\n");
       skills={"Flutter, Firebase(Authentication, Firestore, Storage)"}
       links={<ButtonYoutube link={"https://youtu.be/RwCf8Z6kW5Q"} />}
       lines={lines}
-      image_list={[first_image, second_image, third_image]}
+      image_list={[first_image, second_image]}
     />
   );
 };

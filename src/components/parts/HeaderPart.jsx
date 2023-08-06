@@ -32,38 +32,56 @@ const HeaderPart = (props) => {
 
   return (
     <header className="flex justify-center items-center w-screen h-22 fixed z-10 bg-gray-600 bg-opacity-30">
-        <ul className="flex  text-2xl md:text-3xl text-white">
-          <li className="chapters w-28 h-16 md:w-52 md:h-20">
-            <a
-              className={
-                props.selectedID === "Home" ? selected_styles : not_selected_styles
-              }
-              href="#home"
-            >
-              Home
-            </a>
-          </li>
-          <li className="chapters w-28 h-16 md:w-52 md:h-20">
-            <a
-              className={
-                props.selectedID === "About" ? selected_styles : not_selected_styles
-              }
-              href="#about"
-            >
-              About
-            </a>
-          </li>
-          <li className="chapters w-28 h-16 md:w-52 md:h-20">
-            <a
-              className={
-                props.selectedID === "Works" ? selected_styles : not_selected_styles
-              }
-              href="#works"
-            >
-              Work
-            </a>
-          </li>
-          <li className="chapters w-28 h-16 md:w-52 md:h-20">
+      <ul className="flex  text-2xl md:text-3xl text-white">
+        <li className="chapters w-28 h-16 md:w-52 md:h-20">
+          <a
+            className={
+              props.selectedID === "Home"
+                ? selected_styles
+                : not_selected_styles
+            }
+            href="#home"
+          >
+            Home
+          </a>
+        </li>
+        <li className="chapters w-28 h-16 md:w-52 md:h-20">
+          <a
+            className={
+              props.selectedID === "About"
+                ? selected_styles
+                : not_selected_styles
+            }
+            href="#about"
+          >
+            About
+          </a>
+        </li>
+        <li className="chapters w-28 h-16 md:w-52 md:h-20">
+          <a
+            className={
+              props.selectedID === "Hobby"
+                ? selected_styles
+                : not_selected_styles
+            }
+            href="#hobby"
+          >
+            Hobby
+          </a>
+        </li>
+        <li className="chapters w-28 h-16 md:w-52 md:h-20">
+          <a
+            className={
+              props.selectedID === "Works"
+                ? selected_styles
+                : not_selected_styles
+            }
+            href="#works"
+          >
+            Work
+          </a>
+        </li>
+        {/* <li className="chapters w-28 h-16 md:w-52 md:h-20">
             <a
               className={
                 props.selectedID === "Career" ? selected_styles : not_selected_styles
@@ -72,8 +90,8 @@ const HeaderPart = (props) => {
             >
               Career
             </a>
-          </li>
-        </ul>
+          </li> */}
+      </ul>
     </header>
   );
 };

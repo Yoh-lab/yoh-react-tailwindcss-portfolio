@@ -3,9 +3,9 @@ import Modal from "./Modal";
 import ButtonGithub from "./Icons/ButtonGithub";
 import thumbnail_image from "./images/16-9/NoccaNocca.jpeg";
 
-import first_image from "./images/nocca_developping_m.png";
-import second_image from "./images/nocca_screen_m.png";
-import third_image from "./images/nocca_screen_m.png";
+import first_image from "./images/NoccaNocca/NoccaNocca1.jpeg";
+import second_image from "./images/NoccaNocca/NoccaNocca2.jpeg";
+
 
 const path = "./contentfigs/CardPortfolio/";
 const CardNoccaNocca = () => {
@@ -31,7 +31,7 @@ const lines = text.trim().split("\n");
         />
       }
       lines={lines}
-      image_list={[first_image, second_image, third_image]}
+      image_list={[first_image, second_image]}
     />
   );
 };

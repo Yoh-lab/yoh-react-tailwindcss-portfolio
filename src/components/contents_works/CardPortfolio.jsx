@@ -2,9 +2,9 @@ import React from "react";
 import Modal from "./Modal";
 import ButtonGithub from "./Icons/ButtonGithub";
 import thumbnail_image from "./images/16-9/WebPage.jpeg";
-import first_image from "./images/portfolio.png"
-import second_image from "./images/portfolio.png"
-import third_image from "./images/portfolio.png"
+import first_image from "./images/Portfolio/Portfolio1.jpeg";
+import second_image from "./images/Portfolio/Portfolio2.jpeg";
+
 
 const path = "./contentfigs/CardPortfolio/";
 const CardPortfolio = () => {
@@ -31,7 +31,6 @@ const lines = text.trim().split("\n");
       image_list={[
         first_image,
         second_image,
-        third_image
       ]}
     />
   );

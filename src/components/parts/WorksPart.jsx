@@ -10,7 +10,7 @@ const WorksPart = () => {
 
       <div className="flex-col items-center m-auto w-9/12 ">
         <section className="">
-          <h1 className="text-gray-700 code font-bold pt-4 pb-12 text-left xl:text-5xl sm:text-5xl text-4xl">
+          <h1 className="text-gray-700 code font-bold pt-24 pb-8 text-left xl:text-5xl sm:text-5xl text-4xl">
             WORKS
           </h1>
         </section>

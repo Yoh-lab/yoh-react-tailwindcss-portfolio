@@ -6,6 +6,7 @@ import WorksPart from "../parts/WorksPart";
 import CareerPart from "../parts/CareerPart";
 import main_icon from "../icon/pawprint.png";
 import FooterPart from "../parts/FooterPart";
+import HobbyPart from "../parts/HobbyPart";
 
 const HomePage = () => {
   const [selectedID, setSelectedID] = useState("Home");
@@ -14,10 +15,10 @@ const HomePage = () => {
       const AboutTag = document.getElementById("about");
       if (!AboutTag) return;
       const AboutTagPosition = AboutTag.getBoundingClientRect();
-      const WorksTag = document.getElementById("works");
+      const WorksTag = document.getElementById("hobby");
       if (!WorksTag) return;
       const WorksTagPosition = WorksTag.getBoundingClientRect();
-      const CareerTag = document.getElementById("career");
+      const CareerTag = document.getElementById("works");
       if (!CareerTag) return;
       const CareerTagPosition = CareerTag.getBoundingClientRect();
 
@@ -35,11 +36,11 @@ const HomePage = () => {
         document.body.style.backgroundColor = "#8BEAFF";
         // console.log("オレンジ");
       } else if (CareerTagPosition.top > 0.5) {
-        setSelectedID("Works");
+        setSelectedID("Hobby");
         document.body.style.backgroundColor = "#B0D5FF";
         // console.log("青");
       } else {
-        setSelectedID("Career");
+        setSelectedID("Works");
         document.body.style.backgroundColor = "#FFDBB0";
         // console.log("緑");
       }
@@ -68,17 +69,24 @@ const HomePage = () => {
         <section
           className="text-gray-700 min-h-screen border-t border-none"
           // className="text-gray-700 border-t border-gray-200 bg-white"
+          id="hobby"
+        >
+          <HobbyPart />
+        </section>
+        <section
+          className="text-gray-700 min-h-screen border-t border-none"
+          // className="text-gray-700 border-t border-gray-200 bg-white"
           id="works"
         >
           <WorksPart />
         </section>
-        <section
+        {/* <section
           className="text-gray-700 min-h-screen border-t border-none"
           // className="text-gray-700 border-t border-gray-200 bg-white"
           id="career"
         >
           <CareerPart />
-        </section>
+        </section> */}
         <section className="text-white border-b border-gray-200 bg-blue-400">
           <FooterPart />
         </section>

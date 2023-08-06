@@ -2,9 +2,9 @@ import React from "react";
 import About from "./About";
 import thumbnail_image from "./images/16-9/Paint.jpeg";
 
-import first_image from "./images/Kon.jpeg"
-import second_image from "./images/IMG_9581.jpeg"
-import third_image from "./images/IMG_8580.jpeg"
+import first_image from "./images/Paint/Paint1.jpeg"
+import second_image from "./images/Paint/Paint2.jpeg"
+import third_image from "./images/Paint/Paint3.jpeg"
 
 const path = "./contentfigs/CardNigetabi/";
 const CardIllustration = () => {
