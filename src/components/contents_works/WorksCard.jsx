@@ -3,7 +3,7 @@ import React from "react";
 const WorksCard = (props) => {
   return (
     <div>
-      <div className="flex flex-col bg-white p-1 rounded-lg">
+      <div className="flex flex-col  p-1 rounded-lg">
       {/* <div className="group relative block h-52 overflow-hidden bg-gray-100 md:h-44"> */}
         <div className="group overflow-hidden rounded-lg">
           <img

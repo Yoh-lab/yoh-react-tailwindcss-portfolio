@@ -24,7 +24,7 @@ const HomePage = () => {
       //スクロールの高さを取得
       let scroll = window.pageYOffset;
       // console.log(scroll+"  "+window.innerHeight)
-      // console.log(scroll + "  " + AboutTagPosition.top);
+      console.log(scroll + "  " + CareerTagPosition.top);
 
       if (AboutTagPosition.top > 0) {
         setSelectedID("Home");
@@ -34,7 +34,7 @@ const HomePage = () => {
         setSelectedID("About");
         document.body.style.backgroundColor = "#8BEAFF";
         // console.log("オレンジ");
-      } else if (CareerTagPosition.top > 0) {
+      } else if (CareerTagPosition.top > 0.5) {
         setSelectedID("Works");
         document.body.style.backgroundColor = "#B0D5FF";
         // console.log("青");
