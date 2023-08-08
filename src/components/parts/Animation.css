@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/*==================================================
+ボンッ
+===================================*/
+
+/* 拡大 */
+
+.zoomIn{
+    animation-name:zoomInAnime;
+    animation-duration:0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:forwards;
+  }
+  
+  @keyframes zoomInAnime{
+    /* from {
+    transform: scale(0.0);
+    }
+  
+    to {
+        transform: scale(1);
+    } */
+    0% {
+        transform: scale(0);
+      }
+      90% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+  }
+
+
+/* https://coco-factory.jp/ugokuweb/move02/4-10/ */
+/* アニメーションスタートの遅延時間を決めるCSS*/
+
+.delay-time02{
+    transform: scale(0.0);
+animation-delay: 0.2s;
+}
+
+.delay-time04{
+    transform: scale(0.0);
+animation-delay: 0.4s;
+}
+
+.delay-time06{
+    transform: scale(0.0);
+animation-delay: 0.6s;
+}
+.delay-time08{
+    transform: scale(0.0);
+animation-delay: 0.6s;
+}
+/*==================================================
+スタート時は要素自体を透過0にするためのopacity:0;を指定する
+===================================*/
+
+.box{
+	opacity: 0;
+}
+
+/*==================================================
+動き自体の指定：今回は「ふわっ」
+===================================*/
+
+.fadeUp {
+animation-name:fadeUpAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+
+/* アニメーション定義 */
+@keyframes expandBorders {
+    0% {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    100% {
+      top: 50%;
+      left: 50%;
+      right: 50%;
+      bottom: 50%;
+    }
+  }
+  
+  /* アニメーションの適用 */
+  .component.active {
+    animation: expandBorders 0.5s ease-out forwards;
+  }

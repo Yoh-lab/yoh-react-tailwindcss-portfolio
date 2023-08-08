@@ -1,5 +1,6 @@
 import React from "react";
 import AboutCard from "./AboutCard";
+import Modal from 'react-modal'
 
 const About = (props) => {
   const [showModal, setShowModal] = React.useState(false);
