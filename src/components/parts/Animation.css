@@ -87,21 +87,25 @@ opacity: 0;
 
 /* アニメーション定義 */
 @keyframes expandBorders {
-    0% {
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+    from {
+        border-top: none;
+        border-right: 0; /* 初期状態ではborder-rightも非表示にする */
+      }
+      to {
+        border-top: 2px solid #000;
+        border-right: 2px solid #000; /* 左から右への伸びを示す */
+      }
     }
-    100% {
-      top: 50%;
-      left: 50%;
-      right: 50%;
-      bottom: 50%;
-    }
-  }
   
   /* アニメーションの適用 */
-  .component.active {
+.headerBorder {
     animation: expandBorders 0.5s ease-out forwards;
+  }
+
+  .component {
+    width: 200px;
+    height: 100px;
+    border: 2px solid #000;
+    border-top: none; /* 初期状態はborder-topを非表示にする */
+    animation: expandBorder 0.5s forwards; /* アニメーションの指定 */
   }

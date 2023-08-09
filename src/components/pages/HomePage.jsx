@@ -54,47 +54,49 @@ const HomePage = () => {
 
   return (
     <div className="w-screen">
-      <div className="relative z-20">
-        <HeaderPart selectedID={selectedID} />
-        {/* <section className=" bg-navy h-screen" id="home"> */}
-        <section className="w-screen h-screen border-none" id="home">
-          <HomePart />
-        </section>
-        <section
-          className="text-gray-700 min-h-screen border-t border-none"
-          id="about"
-        >
-          <AboutPart />
-        </section>
-        <section
-          className="text-gray-700 min-h-screen border-t border-none"
-          // className="text-gray-700 border-t border-gray-200 bg-white"
-          id="hobby"
-        >
-          <HobbyPart />
-        </section>
-        <section
-          className="text-gray-700 min-h-screen border-t border-none"
-          // className="text-gray-700 border-t border-gray-200 bg-white"
-          id="works"
-        >
-          <WorksPart />
-        </section>
-        {/* <section
-          className="text-gray-700 min-h-screen border-t border-none"
-          // className="text-gray-700 border-t border-gray-200 bg-white"
-          id="career"
-        >
-          <CareerPart />
-        </section> */}
-        <section className="text-white border-b border-gray-200 bg-blue-400">
-          <FooterPart />
-        </section>
-      </div>
-      <div className="icon fixed top-0 left-0 w-screen h-screen flex justify-center items-center pointer-events-none z-10 opacity-10">
+        <div  className="fixed top-0 left-0  z-30">
+          <HeaderPart selectedID={selectedID}/>
+        </div>
+        <div className="absolute top-0 left-0 z-20">
+          {/* <section className=" bg-navy h-screen" id="home"> */}
+          <section className="w-screen h-screen border-none" id="home">
+            <HomePart />
+          </section>
+          <section
+            className="text-gray-700 min-h-screen border-t border-none"
+            id="about"
+          >
+            <AboutPart />
+          </section>
+          <section
+            className="text-gray-700 min-h-screen border-t border-none"
+            // className="text-gray-700 border-t border-gray-200 bg-white"
+            id="hobby"
+          >
+            <HobbyPart />
+          </section>
+          <section
+            className="text-gray-700 min-h-screen border-t border-none"
+            // className="text-gray-700 border-t border-gray-200 bg-white"
+            id="works"
+          >
+            <WorksPart />
+          </section>
+          {/* <section
+            className="text-gray-700 min-h-screen border-t border-none"
+            // className="text-gray-700 border-t border-gray-200 bg-white"
+            id="career"
+          >
+            <CareerPart />
+          </section> */}
+          <section className="text-white border-b border-gray-200 bg-blue-400">
+            <FooterPart />
+          </section>
+        </div>
+        <div className="icon fixed top-0 left-0 w-screen h-screen flex justify-center items-center pointer-events-none z-10 opacity-10">
           <img className="md:w-96 w-72" src={main_icon} alt="Main Icon" />
         </div>
-    </div>
+      </div>
   );
 };
 
