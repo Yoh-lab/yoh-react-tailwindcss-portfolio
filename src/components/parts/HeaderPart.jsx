@@ -23,7 +23,8 @@ const HeaderPart = (props) => {
   // });
 
   // const styles = { outlineStyle: "solid", padding:"5px"  };//切り替わる際のズレをなくすためにborderは却下
-  const selected_styles = "p-2 button-border";
+  // const selected_styles = "p-2 button-border";
+  const selected_styles = "p-2 btn6";
   const not_selected_styles = "p-2";
   // const header_styles =
   //   "flex justify-center items-center w-screen h-22 fixed z-10";
@@ -31,6 +32,7 @@ const HeaderPart = (props) => {
   // const header_styles_skils = "flex justify-around items-center w-full h-24 fixed z-10";
 
   return (
+
     <header className="flex justify-center items-center w-screen h-22 bg-gray-600 bg-opacity-30">
       <ul className="flex  text-2xl md:text-3xl text-white">
         <li className="chapters w-28 h-16 md:w-52 md:h-20">

@@ -36,6 +36,11 @@
 /* https://coco-factory.jp/ugokuweb/move02/4-10/ */
 /* アニメーションスタートの遅延時間を決めるCSS*/
 
+.delay-time01{
+  transform: scale(0.0);
+animation-delay: 0.1s;
+}
+
 .delay-time02{
     transform: scale(0.0);
 animation-delay: 0.2s;
