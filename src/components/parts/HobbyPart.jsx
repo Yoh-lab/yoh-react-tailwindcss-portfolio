@@ -47,13 +47,13 @@ const HobbyPart = () => {
 
   return (
     <div className={`${isClicked?"touch-none":""}`}>
-      <div className=" h-screen flex-col items-center m-auto w-9/12 ">
+      <div className=" flex-col items-center m-auto w-9/12 ">
         <section >
           <h1 className={`${inView? "opacity-100 zoomIn": "opacity-0"} h-fit w-fit text-gray-700 code font-bold pt-24 pb-8 text-left xl:text-5xl sm:text-5xl text-4xl`}>
             HOBBY
           </h1>
         </section>
-        <section ref={ref} className="md:h-screen">
+        <section ref={ref} className="">
           <div className=" xl:max-w-6xl lg:max-w-4xl md:max-w-3xl sm:max-w-lg max-w-sm mx-auto">
             <div className="grid xl:gap-x-16 xl:gap-y-6 md:gap-y-24 sm:gap-x-8 sm:gap-y-6 gap-y-4 md:grid-cols-2 grid-cols-1">
               <div

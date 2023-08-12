@@ -93,8 +93,9 @@ const HomePage = () => {
             <FooterPart />
           </section>
         </div>
-        <div className="icon fixed top-0 left-0 w-screen h-screen flex justify-center items-center pointer-events-none z-10 opacity-10">
-          <img className="md:w-96 w-72" src={main_icon} alt="Main Icon" />
+        <div className="icon fixed top-0 left-0 w-screen h-screen flex justify-center items-center pointer-events-none z-10 ">
+          <img className="fixed iconAnime md:w-96 w-72" src={main_icon} alt="Main Icon" />
+          <img className="fixed delay-time04 iconStamp md:w-96 w-72" src={main_icon} alt="Main Icon" />
         </div>
       </div>
   );
