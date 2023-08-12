@@ -35,7 +35,7 @@ const HomePage = () => {
         setSelectedID("About");
         document.body.style.backgroundColor = "#8BEAFF";
         // console.log("オレンジ");
-      } else if (CareerTagPosition.top > 0.5) {
+      } else if (CareerTagPosition.top > 1.5) {
         setSelectedID("Hobby");
         document.body.style.backgroundColor = "#B0D5FF";
         // console.log("青");

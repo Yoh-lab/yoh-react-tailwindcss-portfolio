@@ -2,13 +2,14 @@ import React from "react";
 import "./Animation.css";
 
 const HomePart = () => {
-  const characters = "S,T,U,D,E,N,T, ,E,N,G,I,N,E,E,R,',S, ,P,O,R,T,F,O,L,I,O, ,S,I,T,E";
+  // const characters = "S,T,U,D,E,N,T, ,E,N,G,I,N,E,E,R,',S, ,P,O,R,T,F,O,L,I,O, ,S,I,T,E";
+  const characters = "STUDENT ENGINEER'S PORTFOLIO SITE";
   const animationDelayStep = 0.015; // 各文字の遅延時間の間隔
 
   return (
     <div>
       <div className="flex flex-col justify-center gap-6 items-center h-screen animate-scale-up-center">
-        <h1 className="flex text-gray-700 code font-bold md:text-7xl text-6xl">
+        <h1 className="flex text-gray-700 code font-bold md:text-7xl text-5xl">
           {/* YOH OTSUKA */}
           <div className="delay-time08 zoomIn">Y</div>
           <div className="delay-time08-5 zoomIn">O</div>
@@ -21,9 +22,9 @@ const HomePart = () => {
           <div className="delay-time12 zoomIn">K</div>
           <div className="delay-time12-5 zoomIn">A</div>
         </h1>
-        <h2 className="flex text-gray-700 code md:text-3xl text-2xl">
+        <h2 className="flex text-gray-700 code md:text-3xl sm:text-2xl text-xl">
           {/* STUDENT ENGINEER'S PORTFOLIO SITE */}
-          {characters.split(",").map((char, index) => (
+          {characters.split("").map((char, index) => (
             <div
               key={index}
               style={{
@@ -31,7 +32,7 @@ const HomePart = () => {
               }}
               className="animated-char zoomIn"
             >
-              {char}
+              {char === ' ' ? '\u00A0' : char}
             </div>
           ))}
 
