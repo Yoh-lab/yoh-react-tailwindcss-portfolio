@@ -16,34 +16,13 @@ const HobbyPart = () => {
   const [isClicked, setIsClicked] = useState(false);
   const handleClicked = () => {
     setIsClicked(true);
-    console.log("clicked");
+    // console.log("clicked");
   };
 
   useEffect(() => {
     setIsClicked(false);
     console.log("isClicked changed:", inView);
   }, [inView]);
-
-  window.onload = function() {
-    // スクロールを禁止にする関数
-    function disableScroll(event) {
-      event.preventDefault();
-    }
-  
-    // スクロール禁止
-    document.getElementById('btn1').onClick = function() {
-      // イベントと関数を紐付け
-      document.addEventListener('touchmove', disableScroll, { passive: false });
-      document.addEventListener('mousewheel', disableScroll, { passive: false });
-    }
-  
-    // スクロール解除
-    document.getElementById('btn2').onClick = function() {
-      // イベントと関数を紐付け
-      document.removeEventListener('touchmove', disableScroll, { passive: false });
-      document.removeEventListener('mousewheel', disableScroll, { passive: false });
-    }
-  }
 
   return (
     <div className={`${isClicked?"touch-none":""}`}>

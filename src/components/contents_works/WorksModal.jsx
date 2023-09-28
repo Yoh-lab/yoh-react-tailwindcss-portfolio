@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import WorksCard from "./WorksCard";
+import isModalOpenContext from "../../main";
 
 const Modal = (props) => {
-  const [showModal, setShowModal] = React.useState(false);
-  const [selectImg, setSelectImg] = React.useState(0);
+  const [showWorkModal, setShowWorkModal] = useState(false);
+  const { isModalOpen, setModalOpen } = useContext(isModalOpenContext);
+  const [selectImg, setSelectImg] = useState(0);
+  const handleModalOpen = () => {
+    setShowWorkModal(true);
+    setModalOpen(true);
+    console.log("hobby modal opened");
+  };
+  const handleModalClose = () => {
+    setShowWorkModal(false);
+    setModalOpen(false);
+    console.log("hobby modal closed");
+  };
 
   return (
     <>
-      <button onClick={() => setShowModal(true)}>
+      <button onClick={handleModalOpen}>
         <WorksCard
           title={props.title}
           // comment={props.subtitle}
@@ -15,7 +27,7 @@ const Modal = (props) => {
           english_title={props.english_title}
         />
       </button>
-      {showModal ? (
+      {showWorkModal ? (
         <>
           <div className="fixed w-screen h-screen inset-0 flex items-center justify-center z-50 bg-opacity-40 bg-black">
             <div className="xl:max-w-5xl sm:max-w-6xl max-w-6xl w-full p-4 bg-white rounded-lg flex-col outline-none">
@@ -32,25 +44,25 @@ const Modal = (props) => {
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <div className="text-amber-600 hover:text-amber-800 mx-auto px-4">
+                    <div className="text-amber-600 flex space-x-2 hover:text-amber-800 mx-auto px-4">
                       {props.links}
                     </div>
                     <button
                       className="text-amber-600 background-transparent font-bold uppercase px-2 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-200 hover:text-amber-800 hover:-translate-y-1 md:ml-auto"
                       type="button"
-                      onClick={() => setShowModal(false)}
+                      onClick={handleModalClose}
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-x"
+                        className="icon icon-tabler icon-tabler-x"
                         width="32"
                         height="32"
                         viewBox="0 0 24 24"
-                        stroke-width="2"
+                        strokeWidth="2"
                         stroke="currentColor"
                         fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       >
                         <path
                           stroke="none"
@@ -104,15 +116,15 @@ const Modal = (props) => {
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="icon icon-tabler icon-tabler-circle-filled"
+                          className="icon icon-tabler icon-tabler-circle-filled"
                           width="24"
                           height="24"
                           viewBox="0 0 24 24"
-                          stroke-width="2"
+                          strokeWidth="2"
                           stroke="currentColor"
                           fill="none"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
                           <path
                             stroke="none"
@@ -121,7 +133,7 @@ const Modal = (props) => {
                           ></path>
                           <path
                             d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z"
-                            stroke-width="0"
+                            strokeWidth="0"
                             fill="currentColor"
                           ></path>
                         </svg>
@@ -132,15 +144,15 @@ const Modal = (props) => {
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="icon icon-tabler icon-tabler-circle-filled"
+                          className="icon icon-tabler icon-tabler-circle-filled"
                           width="24"
                           height="24"
                           viewBox="0 0 24 24"
-                          stroke-width="2"
+                          strokeWidth="2"
                           stroke="currentColor"
                           fill="none"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
                           <path
                             stroke="none"
@@ -149,7 +161,7 @@ const Modal = (props) => {
                           ></path>
                           <path
                             d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z"
-                            stroke-width="0"
+                            strokeWidth="0"
                             fill="currentColor"
                           ></path>
                         </svg>

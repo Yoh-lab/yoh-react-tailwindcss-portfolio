@@ -25,7 +25,7 @@ const HomePage = () => {
       //スクロールの高さを取得
       let scroll = window.pageYOffset;
       // console.log(scroll+"  "+window.innerHeight)
-      console.log(scroll + "  " + CareerTagPosition.top);
+      // console.log(scroll + "  " + CareerTagPosition.top);
 
       if (AboutTagPosition.top > 0) {
         setSelectedID("Home");
@@ -50,6 +50,7 @@ const HomePage = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+    
   }, []);
 
   return (
