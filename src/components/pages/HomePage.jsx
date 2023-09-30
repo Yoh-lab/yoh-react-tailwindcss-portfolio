@@ -60,7 +60,7 @@ const HomePage = () => {
         </div>
         <div className="absolute top-0 left-0 z-20">
           {/* <section className=" bg-navy h-screen" id="home"> */}
-          <section className="w-screen h-screen border-none" id="home">
+          <section className="w-screen min-h-screen border-none" id="home">
             <HomePart />
           </section>
           <section

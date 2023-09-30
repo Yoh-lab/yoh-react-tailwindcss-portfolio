@@ -9,7 +9,7 @@ const HomePart = () => {
   return (
     <div>
       <div className="flex flex-col justify-center gap-6 items-center h-screen animate-scale-up-center">
-        <h1 className="flex text-gray-700 code font-bold md:text-7xl text-5xl">
+        <h1 className="flex text-gray-700 code font-bold md:text-7xl sm:text-5xl text-3xl">
           {/* YOH OTSUKA */}
           <div className="delay-time08 zoomIn">Y</div>
           <div className="delay-time08-5 zoomIn">O</div>
@@ -22,7 +22,7 @@ const HomePart = () => {
           <div className="delay-time12 zoomIn">K</div>
           <div className="delay-time12-5 zoomIn">A</div>
         </h1>
-        <h2 className="flex text-gray-700 code md:text-3xl sm:text-2xl text-xl">
+        <h2 className="flex text-gray-700 code md:text-3xl sm:text-2xl text-md">
           {/* STUDENT ENGINEER'S PORTFOLIO SITE */}
           {characters.split("").map((char, index) => (
             <div

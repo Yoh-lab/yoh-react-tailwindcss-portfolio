@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
 import WorksCard from "./WorksCard";
-import isModalOpenContext from "../../main";
+import { ModalContext } from "../../App";
 
 const Modal = (props) => {
   const [showWorkModal, setShowWorkModal] = useState(false);
-  const { isModalOpen, setModalOpen } = useContext(isModalOpenContext);
+  const {setModalOpen} = useContext(ModalContext);
   const [selectImg, setSelectImg] = useState(0);
   const handleModalOpen = () => {
     setShowWorkModal(true);

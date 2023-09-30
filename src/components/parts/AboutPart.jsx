@@ -26,10 +26,10 @@ const AboutPart = () => {
       <section className="h-screen ">
         <div className=" flex items-center justify-between xl:pt-48 sm:pt-36 pt-36 xl:pb-28 pb-24 xl:w-8/12 lg:w-8/12 md:w-8/12 sm:w-10/12 w-9/12 mx-auto">
         <div className={`${inView? "opacity-100 zoomIn": "opacity-0"}`}>
-            <h1 className="text-gray-700 code font-bold ml-2 text-left  xl:text-3xl md:text-2xl text-2xl">
+            <h1 className="text-gray-700 code font-bold ml-2 text-left  xl:text-3xl md:text-2xl sm:text-2xl text-xl whitespace-nowrap">
               おおつか よう
             </h1>
-            <h1 className="text-gray-700 code font-bold xl:text-7xl sm:text-5xl text-4xl">
+            <h1 className="text-gray-700 code font-bold xl:text-7xl sm:text-5xl text-2xl whitespace-nowrap">
               YOH OTSUKA
             </h1>
           </div>

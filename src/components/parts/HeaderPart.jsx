@@ -34,8 +34,8 @@ const HeaderPart = (props) => {
   return (
 
     <header className="flex justify-center items-center w-screen h-22 bg-gray-600 bg-opacity-30">
-      <ul className="flex  text-xl md:text-3xl text-white">
-        <li className="chapters w-24 h-16 md:w-52 md:h-20">
+      <ul className="flex md:text-3xl sm:text-xl text-md text-white">
+        <li className="chapters md:w-52 md:h-20 sm:w-36 w-20 h-16">
           <a
             className={
               props.selectedID === "Home"
@@ -47,7 +47,7 @@ const HeaderPart = (props) => {
             Home
           </a>
         </li>
-        <li className="chapters w-24 h-16 md:w-52 md:h-20">
+        <li className="chapters md:w-52 md:h-20 sm:w-36 w-20 h-16">
           <a
             className={
               props.selectedID === "About"
@@ -59,7 +59,7 @@ const HeaderPart = (props) => {
             About
           </a>
         </li>
-        <li className="chapters w-24 h-16 md:w-52 md:h-20">
+        <li className="chapters md:w-52 md:h-20 sm:w-36 w-20 h-16">
           <a
             className={
               props.selectedID === "Hobby"
@@ -71,7 +71,7 @@ const HeaderPart = (props) => {
             Hobby
           </a>
         </li>
-        <li className="chapters w-24 h-16 md:w-52 md:h-20">
+        <li className="chapters md:w-52 md:h-20 sm:w-36 w-20 h-16">
           <a
             className={
               props.selectedID === "Works"
