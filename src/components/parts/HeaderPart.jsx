@@ -34,7 +34,7 @@ const HeaderPart = (props) => {
   return (
 
     <header className="flex justify-center items-center w-screen h-22 bg-gray-600 bg-opacity-30">
-      <ul className="flex md:text-3xl sm:text-xl text-md text-white">
+      <ul className="flex md:text-3xl sm:text-xl text-lg text-white">
         <li className="chapters md:w-52 md:h-20 sm:w-36 w-20 h-16">
           <a
             className={

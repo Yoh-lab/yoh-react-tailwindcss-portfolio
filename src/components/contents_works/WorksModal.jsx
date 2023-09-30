@@ -36,10 +36,10 @@ const Modal = (props) => {
               <div className="border-b border-solid border-slate-200">
                 <div className="flex items-center justify-between px-6 pt-4">
                   <div className="flex items-center">
-                    <h3 className="text-xl md:text-2xl font-semibold text-amber-600">
+                    <h3 className="md:text-2xl text-sm font-semibold text-amber-600">
                       {props.title}
                     </h3>
-                    <div className="text-lg text-left font-semibold text-amber-600 pl-6">
+                    <div className="md:text-lg text-sm text-left font-semibold text-amber-600 pl-6">
                       {props.date}
                     </div>
                   </div>
@@ -81,14 +81,14 @@ const Modal = (props) => {
                 <div className="container py-2 flex-col md:flex-row items-center flex justify-center">
                   <div className="md:w-1/2 mb-4 px-4 md:mr-6 text-center">
                     <div className="mb-2">
-                      <h3 className="text-2xl text-amber-600 py-6 font-semibold">
+                      <h3 className="sm:text-2xl text-md text-amber-600 py-6 font-semibold">
                         詳細
                       </h3>
                       <div className="">
                         {/* <p className="text-gray-500 leading-relaxed text-left">
                             {props.description}
                           </p> */}
-                        <h2 className="text-gray-700 code text-left sm:text-xl text-lg">
+                        <h2 className="text-gray-700 code text-left sm:text-xl text-sm">
                           {props.lines.map((line, index) => (
                             <React.Fragment key={index}>
                               {line}
@@ -100,10 +100,10 @@ const Modal = (props) => {
                     </div>
 
                     <div className="mb-2">
-                      <h3 className="text-2xl text-amber-600 py-4 font-semibold">
+                      <h3 className="sm:text-2xl text-md text-amber-600 py-4 font-semibold">
                         使用したツール
                       </h3>
-                      <p className="text-xl text-gray-700 leading-relaxed">
+                      <p className="sm:text-xl text-sm text-gray-700 leading-relaxed">
                         {props.skills}
                       </p>
                     </div>
