@@ -3,5 +3,74 @@
     align-items: center;
     justify-content: center;
   }
-/* 
-  .selected */
+
+
+
+.btn6{
+  /* padding: 10px 30px;
+  margin:0px 0px; */
+  color: #fff;
+  /* font-family: sans-serif; */
+  /* text-transform: uppercase; */
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display:inline-block;
+  
+}
+
+
+/*=======Button 6============= */
+.btn6{
+  border:0px solid transparent; 
+   -webkit-transition: all 0.2s cubic-bezier(.5, .24, 0, 0);
+  transition: all 0.2s cubic-bezier(.5, .24, 0, 0);
+  border-left:4px solid #f5f5f5;
+  border-right:4px solid #f5f5f5;
+  /* border-left: ; */
+}
+
+.btn6::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom:0px;
+  height:3px;
+  background: #f5f5f5;
+  display: block;
+  animation: expandBorder 0.3s ease forwards;
+  /* width:70%; */
+}
+
+.btn6::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  top:0px;
+  height:3px;
+  background: #f5f5f5;
+  animation: expandBorder 0.3s ease forwards;
+  /* width:70%; */
+}
+
+@keyframes expandBorder {
+  0% {
+    width:0%;
+  }
+  100% {
+    width:100%;
+  }
+}
+
+/* .btn6:hover::before {
+  width:100%;
+} */
+
+/* .btn6:hover::after {
+  width:100%;
+} */
+/* .btn6:hover{
+  border-left:4px solid #f5f5f5;
+  border-right:4px solid #f5f5f5;
+} */
+/* button7 */

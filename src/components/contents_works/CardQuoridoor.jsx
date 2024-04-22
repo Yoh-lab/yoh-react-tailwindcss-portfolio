@@ -1,5 +1,5 @@
 import React from "react";
-import Modal from "./Modal";
+import Modal from "./WorksModal";
 import ButtonGithub from "./Icons/ButtonGithub";
 import thumbnail_image from "./images/16-9/Quoridoor.jpeg";
 import first_image from "./images/Quoridor/Quoridor1.jpeg";
@@ -23,7 +23,7 @@ const lines = text.trim().split("\n");
       //   "壁を駆使して、敵陣にコマを進めるゲームです！買うお金がもったいなかったので、自分でUnityで作っちゃいました！（エラーが見つかったため、現在修正中です。）"
       // }
       skills={"C#(Unity)"}
-      links={<ButtonGithub link={"https://github.com/Yoh-lab/yoh-UnityGame-Corridor.git"}/>}
+      links={<><ButtonGithub link={"https://github.com/Yoh-lab/yoh-UnityGame-Corridor.git"}/></>}
       lines={lines}
       image_list={[
         first_image,

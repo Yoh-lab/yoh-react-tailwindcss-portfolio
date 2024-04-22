@@ -9,11 +9,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chakra-ui/hooks": "^2.2.0",
+    "@chakra-ui/modal": "^2.3.0",
+    "@chakra-ui/react": "^2.8.0",
     "@mui/material": "^5.14.3",
+    "@types/react-modal": "^3.16.0",
     "@types/react-router-dom": "^5.3.3",
+    "esbuild": "^0.19.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.2"
+    "react-intersection-observer": "^9.5.2",
+    "react-modal": "^3.16.1",
+    "react-router-dom": "^6.14.2",
+    "react-scroll-trigger": "^0.6.14"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

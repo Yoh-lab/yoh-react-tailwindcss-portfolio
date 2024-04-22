@@ -1,5 +1,5 @@
 import React from "react";
-import Modal from "./Modal";
+import Modal from "./WorksModal";
 import ButtonGithub from "./Icons/ButtonGithub";
 import thumbnail_image from "./images/16-9/NoccaNocca.jpeg";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Modal from "./Modal";
+import Modal from "./WorksModal";
 import ButtonGithub from "./Icons/ButtonGithub";
 import thumbnail_image from "./images/16-9/WebPage.jpeg";
 import first_image from "./images/Portfolio/Portfolio1.jpeg";

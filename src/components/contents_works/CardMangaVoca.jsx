@@ -1,5 +1,5 @@
 import React from "react";
-import Modal from "./Modal";
+import Modal from "./WorksModal";
 import thumbnail_image from "./images/16-9/MangaVoca.jpeg";
 
 import first_image from "./images/MangaVoca/MangaVoca1.jpeg";
