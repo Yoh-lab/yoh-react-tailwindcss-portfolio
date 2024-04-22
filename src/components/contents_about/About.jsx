@@ -5,17 +5,17 @@ import { ModalContext } from "../../App";
 
 const About = (props) => {
   const [showHobbyModal, setShowHobbyModal] = React.useState(false);
-  const {setModalOpen} = useContext(ModalContext);
+  const { setModalOpen } = useContext(ModalContext);
   const [selectImg, setSelectImg] = useState(0);
   const handleModalOpen = () => {
     setShowHobbyModal(true);
     setModalOpen(true);
-    console.log("hobby modal opened");
+    // console.log("hobby modal opened");
   };
   const handleModalClose = () => {
     setShowHobbyModal(false);
     setModalOpen(false);
-    console.log("hobby modal closed");
+    // console.log("hobby modal closed");
   };
 
   return (

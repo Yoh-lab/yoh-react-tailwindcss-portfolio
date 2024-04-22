@@ -21,14 +21,14 @@ const HobbyPart = () => {
 
   useEffect(() => {
     setIsClicked(false);
-    console.log("isClicked changed:", inView);
+    // console.log("isClicked changed:", inView);
   }, [inView]);
 
   return (
-    <div className={`${isClicked?"touch-none":""}`}>
+    <div className={`${isClicked ? "touch-none" : ""}`}>
       <div className=" flex-col items-center m-auto w-9/12 ">
         <section >
-          <h1 className={`${inView? "opacity-100 zoomIn": "opacity-0"} h-fit w-fit text-gray-700 code font-bold pt-24 pb-8 text-left xl:text-5xl sm:text-5xl text-4xl`}>
+          <h1 className={`${inView ? "opacity-100 zoomIn" : "opacity-0"} h-fit w-fit text-gray-700 code font-bold pt-24 pb-8 text-left xl:text-5xl sm:text-5xl text-4xl`}>
             HOBBY
           </h1>
         </section>
@@ -36,38 +36,35 @@ const HobbyPart = () => {
           <div className=" xl:max-w-6xl lg:max-w-4xl md:max-w-3xl sm:max-w-lg max-w-sm mx-auto">
             <div className="grid xl:gap-x-16 xl:gap-y-6 md:gap-y-24 sm:gap-x-8 sm:gap-y-6 gap-y-4 md:grid-cols-2 grid-cols-1">
               <div
-                className={`${
-                  inView
-                    ? isClicked
-                      ? "opacity-100"
-                      : "opacity-100 zoomIn"
-                    : "opacity-0"
-                }`}
+                className={`${inView
+                  ? isClicked
+                    ? "opacity-100"
+                    : "opacity-100 zoomIn"
+                  : "opacity-0"
+                  }`}
                 onClick={handleClicked}
                 id="btn1"
               >
                 <CardVolleyBall />
               </div>
               <div
-                className={`${
-                  inView
-                    ? isClicked
-                      ? "opacity-100"
-                      : "opacity-100 delay-time02 zoomIn"
-                    : "opacity-0"
-                }`}
+                className={`${inView
+                  ? isClicked
+                    ? "opacity-100"
+                    : "opacity-100 delay-time02 zoomIn"
+                  : "opacity-0"
+                  }`}
                 onClick={handleClicked}
               >
                 <CardActivity />
               </div>
               <div
-                className={`${
-                  inView
-                    ? isClicked
-                      ? "opacity-100"
-                      : "opacity-100 delay-time04 zoomIn"
-                    : "opacity-0"
-                }`}
+                className={`${inView
+                  ? isClicked
+                    ? "opacity-100"
+                    : "opacity-100 delay-time04 zoomIn"
+                  : "opacity-0"
+                  }`}
                 onClick={handleClicked}
               >
                 <CardIllustration />
@@ -75,13 +72,12 @@ const HobbyPart = () => {
               {/* <div className="delay-time06 box zoomIn"> */}
               {/* もし、スライドインするなら、delay-time02 box fadeUpとかにする */}
               <div
-                className={`${
-                  inView
-                    ? isClicked
-                      ? "opacity-100"
-                      : "opacity-100 delay-time06 zoomIn"
-                    : "opacity-0"
-                }`}
+                className={`${inView
+                  ? isClicked
+                    ? "opacity-100"
+                    : "opacity-100 delay-time06 zoomIn"
+                  : "opacity-0"
+                  }`}
                 onClick={handleClicked}
               >
                 <CardRamen />

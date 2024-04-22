@@ -18,12 +18,12 @@ const WorksPart = () => {
   const [isClicked, setIsClicked] = useState(false);
   const handleClicked = () => {
     setIsClicked(true);
-    console.log("clicked");
+    // console.log("clicked");
   };
 
   useEffect(() => {
     setIsClicked(false);
-    console.log("isClicked changed:", inView);
+    // console.log("isClicked changed:", inView);
   }, [inView]);
 
 
@@ -40,10 +40,10 @@ const WorksPart = () => {
           <div className="grid xl:gap-x-16 xl:gap-y-6 md:gap-y-24 sm:gap-x-8 sm:gap-y-6 gap-y-4 md:grid-cols-2 grid-cols-1">
             <div
               className={`${inView
-                  ? isClicked
-                    ? "opacity-100"
-                    : "opacity-100 zoomIn"
-                  : "opacity-0"
+                ? isClicked
+                  ? "opacity-100"
+                  : "opacity-100 zoomIn"
+                : "opacity-0"
                 }`}
               onClick={handleClicked}
             >
@@ -51,10 +51,10 @@ const WorksPart = () => {
             </div>
             <div
               className={`${inView
-                  ? isClicked
-                    ? "opacity-100"
-                    : "opacity-100 delay-time02 zoomIn"
-                  : "opacity-0"
+                ? isClicked
+                  ? "opacity-100"
+                  : "opacity-100 delay-time02 zoomIn"
+                : "opacity-0"
                 }`}
               onClick={handleClicked}
             >
@@ -62,10 +62,10 @@ const WorksPart = () => {
             </div>
             <div
               className={`${inView
-                  ? isClicked
-                    ? "opacity-100"
-                    : "opacity-100 delay-time04 zoomIn"
-                  : "opacity-0"
+                ? isClicked
+                  ? "opacity-100"
+                  : "opacity-100 delay-time04 zoomIn"
+                : "opacity-0"
                 }`}
               onClick={handleClicked}
             >
@@ -75,10 +75,10 @@ const WorksPart = () => {
             {/* もし、スライドインするなら、delay-time02 box fadeUpとかにする */}
             <div
               className={`${inView
-                  ? isClicked
-                    ? "opacity-100"
-                    : "opacity-100 delay-time06 zoomIn"
-                  : "opacity-0"
+                ? isClicked
+                  ? "opacity-100"
+                  : "opacity-100 delay-time06 zoomIn"
+                : "opacity-0"
                 }`}
               onClick={handleClicked}
             >
@@ -88,10 +88,10 @@ const WorksPart = () => {
             {/* もし、スライドインするなら、delay-time02 box fadeUpとかにする */}
             <div
               className={`${inView
-                  ? isClicked
-                    ? "opacity-100"
-                    : "opacity-100 delay-time06 zoomIn"
-                  : "opacity-0"
+                ? isClicked
+                  ? "opacity-100"
+                  : "opacity-100 delay-time06 zoomIn"
+                : "opacity-0"
                 }`}
               onClick={handleClicked}
             >
@@ -102,10 +102,10 @@ const WorksPart = () => {
             {/* <AboutCard img="src/components/contents_about/images/IMG_3878.jpg" text="アニメ・漫画" /> */}
             <div
               className={`${inView
-                  ? isClicked
-                    ? "opacity-100"
-                    : "opacity-100 delay-time06 zoomIn"
-                  : "opacity-0"
+                ? isClicked
+                  ? "opacity-100"
+                  : "opacity-100 delay-time06 zoomIn"
+                : "opacity-0"
                 }`}
               onClick={handleClicked}
             >
